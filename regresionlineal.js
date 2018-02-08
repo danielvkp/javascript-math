@@ -19,7 +19,7 @@ let sumaindices = ventas.reduce((a, b) => { return  a + b.mes }, 0)
 
 let sumaventas = ventas.reduce((a, b) => {  return  a + b.venta }, 0)
 
-let indicesalcuadrado = ventas.reduce((a, b) => { return  a + (b.mes * b.mes) }, 0)
+let indicesalcuadrado = ventas.reduce((a, b) => { return  a + (b.mes ** 2) }, 0)
 
 let sumaalcuadrado = sumaindices * sumaindices
 
