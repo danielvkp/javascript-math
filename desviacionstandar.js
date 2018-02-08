@@ -1,12 +1,11 @@
-const items = [0, 2, 4, 5, 8, 10, 10, 15, 38]
-
-let sumaitems = items.reduce((a, b) => {
-    return a + b
-})
+const items = [13, 14, 15, 15, 15, 16, 17, 18, 20]
 
 let totalitems = items.length
 
-let media = sumaitems / totalitems
+let media = items
+    .reduce((a, b) => {
+        return a + b
+    }) / totalitems
 
 let restamedia = items
     .map((x) => {
