@@ -7,8 +7,8 @@ const ventas = [
     {mes: 6, venta:13000},
 ]
 
-let sumatotal = 
-    ventas.map((element) => {
+let sumatotal = ventas
+    .map((element) => {
         return element.mes * element.venta
     })
     .reduce((a, b) =>{
