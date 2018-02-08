@@ -9,7 +9,7 @@ let media = items
 
 let restamedia = items
     .map((x) => {
-        return (x - media) * ( x - media)
+        return (x - media) **2
     })
     .reduce((a, b) => {
         return a + b
